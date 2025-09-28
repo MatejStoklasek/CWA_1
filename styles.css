@@ -1,0 +1,129 @@
+body {
+    background: #fdfdfd;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #f6f5ef;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 5vw;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #092b3d;
+    user-select: none
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 2vw;
+    font-size: 1.5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    user-select: none
+}
+
+.menu a:hover::before {
+    content: "(";
+}
+
+.menu a:hover::after {
+    content: ")";
+}
+
+.menu a:hover {
+    color: #246568;
+    cursor: none;
+}
+
+.contact {
+    font-size: 2rem;
+    user-select: none;
+    color: #092b3d;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    color: #0d2f3f;
+    padding: 2vw 5vw;
+}
+
+.left {
+    flex: 1;
+}
+
+.left h2 {
+    font-size: 6rem;
+    line-height: 1.2;
+    margin: 20px ;
+}
+
+.email {
+    display: inline-block;
+    color: #e55940;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.experience {
+    font-size: 1.8rem;
+    margin-top: 40px;
+}
+
+.intro-image {
+    flex: 1;
+    position: relative;
+    text-align: center;
+}
+
+.intro-image img {
+    max-width: 900px;
+    position: relative;
+    z-index: 1;
+}
+
+.right {
+    flex: 1;
+    text-align: left;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.certification {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.certification img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+.certification p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
