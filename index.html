@@ -1,132 +1,210 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binjan — Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Sora:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
-<header>
-    <nav>
-        <div class="logo">Binjan</div>
-        <ul class="menu">
-            <li><a href="#">SREVICES</a></li>
-            <li><a href="#">WORKS</a></li>
-            <li><a href="#">NOTES</a></li>
-            <li><a href="#">EXPERIENCE</a></li>
-        </ul>
-        <a class="contact" href="#">+001 (313) 345 678</a>
-    </nav>
+<header class="header">
     <div class="container">
-        <div class="left">
-            <h2>Hey There,<br>Im Binjan</h2>
-            <a class="email" href="#">banjan10@gmail.com</a>
-            <p class="experience"><strong>10</strong> YEARS EXPERIENCE</p>
-        </div>
-        <div class="intro-image">
-            <img src="https://placehold.co/600x400" alt="Binjan Asi">
-        </div>
-        <div class="right">
-            <p class="intro-text">I design beautifully simple<br> things, and I love what i do</p>
+        <nav class="nav">
+            <div class="logo">Binjan</div>
+            <ul class="menu">
+                <li><a class="active" href="#srevices">SREVICES</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#">NOTES</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+            </ul>
+            <a class="contact" href="#">+001 (313) 345 678</a>
+        </nav>
 
-            <div class="certification">
-                <img src="" alt="logo">
-                <p>IDF Certifid<br>
-                    Profational UI/UX Designer</p>
+        <div class="hero">
+            <div class="hero-left">
+                <h1 class="hero-title">Hey There,<br>I'm Binjan</h1>
+                <a class="email" href="mailto:banjan10@gmail.com">banjan10@gmail.com</a>
+                <p class="experience"><strong>10</strong> YEARS EXPERIENCE</p>
+            </div>
+            <div class="hero-image">
+                <div class="hero-bg" aria-hidden="true"></div>
+                <img src="https://placehold.co/600x720/png" alt="Portrait placeholder">
+            </div>
+            <div class="hero-right">
+                <p class="intro-text">I design beautifully simple things. And I love what i do.</p>
+                <div class="certification">
+                    <img src="https://placehold.co/72x72/png" alt="Certification badge">
+                    <p>IDF CERTIFIED<br>PROFATIONAL<br> UI/UX DESIGNER</p>
+                </div>
             </div>
         </div>
     </div>
-
-
 </header>
-<section class="help">
-    <div class="service">
-        <div>Website Design</div>
-        <div>Mobile App Design</div>
-        <div>Brand Identity</div>
-    </div>
-    <div class="what_help">
-        <h2>What do I help?</h2>
-        <p>I will help you with finding a solution and solve
-            <br>your problems, We use process design to create digital
-            <br>products. Besides, that also helps their business.
-            <br>We use process design to create digital products.
-            <br>Besides, that also helps their business.
-        </p>
-        <div class="services_stats">
-            <div><strong>285+</strong> Project Completed</div>
-            <div><strong>190+</strong> Happy Clients</div>
-        </div>
-    </div>
-</section>
-
-<section class="work-experience">
-    <h2>My Work Experience</h2>
-    <div class="jobs">
-        <div class="job">
-            <h3>Self-Employed, Brisbane</h3>
-            <p>Sep 2016 - Aug 2014</p>
-
-            <p>Visual Designer</p>
-            <p>A visual designer designs for a variety of platforms, which
-                <br>may include Internet and intranet sites, games, movies,
-                <br>kiosks and wearables. In short, they create the concepts,
-            </p>
-        </div>
-        <div class="job">
-            <h3>New Man Services</h3>
-            <p>Jan 17 - Mar 2018</p>
-
-            <p>UI/UX Designer</p>
-            <p>User iterface design or user interface engineering is the
-                <br>design of user interfaces for machines and software, such
-                <br>as computers, home appliances, mobile devices.
-            </p>
-        </div>
-        <div class="job">
-            <h3>Global solution</h3>
-            <p>Feb 2019 - Mar 2020</p>
-
-            <p>Sr. Product Designer</p>
-            <p>Find Product Photography Canada. Large Selection. Always
-                <br>Sale. Cheap Prices. Full Offer. Save Online. Compare Online.
-                <br>Simple Search. The Best Price. Compare Simply.
-            </p>
-        </div>
-    </div>
-</section>
-<section class="My Latest Works">
+<section id="services" class="help">
     <div class="container">
-        <h2>My Latest Works</h2>
-        <div class="work">
-            <div class="app_design">
-                <h3>App Design</h3>
-                <p>Food Delivery App</p>
-                <img src="https://placehold.co/600x400" alt="Food Delivery App">
+        <div class="help-grid">
+            <div class="service-cards">
+                <a class="service-card" href="#">
+                    <span class="icon">●</span>
+                    <div class="service-title">Website Design</div>
+                    <div class="service-sub">76 Projects</div>
+                </a>
+                <a class="service-card" href="#">
+                    <span class="icon">●</span>
+                    <div class="service-title">Mobile App Design</div>
+                    <div class="service-sub">63 Projects</div>
+                </a>
+                <a class="service-card" href="#">
+                    <span class="icon">●</span>
+                    <div class="service-title">Brand Identity</div>
+                    <div class="service-sub">47 Projects</div>
+                </a>
             </div>
-            <div class="web_design">
-                <h3>Web Design</h3>
-                <p>Agency Website</p>
-                <img src="https://placehold.co/600x400" alt="Agency Website">
-            </div>
-            <div class="brand_design">
-                <h3>Brand Design</h3>
-                <p>Brand logo</p>
-                <img src="https://placehold.co/600x400" alt="Brand logo">
+            <div class="what-help">
+                <h2 class="section-title">What do I help?</h2>
+                <p>I will help you with finding a solution and solve your problems. We use process design to create digital products. Besides, that also helps their business. We use process design to create digital products. Besides, that also helps their business.</p>
+                <div class="services-stats">
+                    <div class="stat"><strong>285+</strong><span>Project Completed</span></div>
+                    <div class="stat"><strong>190+</strong><span>Happy Clients</span></div>
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section class="about us">
-    <div>
-        <h2>People talk about us</h2>
-        <p>I got a job that was in accordance with the salary and field of work, The process
-            <br>of submitting an application was quite cosy
-        </p>
-        <div class="testimonials"></div>
-    </div>
 
+<section id="experience" class="work-experience">
+    <div class="container">
+        <h2 class="section-title">My Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-left">
+                    <h3 class="company">Self-Employed, Brisbane</h3>
+                    <div class="period">Sep 2016 - Aug 2014</div>
+                </div>
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-right">
+                    <div class="role">Visual Designer</div>
+                    <p>A visual designer designs for a variety of platforms, which may include Internet and intranet sites, games, movies, kiosks and wearables. In short, they create the concepts.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-left">
+                    <h3 class="company">New Man Services</h3>
+                    <div class="period">Jan 17 - Mar 2018</div>
+                </div>
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-right">
+                    <div class="role">UI/UX Designer</div>
+                    <p>User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-left">
+                    <h3 class="company">Global Solution</h3>
+                    <div class="period">Feb 2019 - Mar 2020</div>
+                </div>
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-right">
+                    <div class="role">Sr. Product Designer</div>
+                    <p>Find Product Photography Canada. Large selection. Always sale. Cheap prices. Full offer. Save online. Compare online. Simple search. The best price. Compare simply.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-<footer></footer>
+<section id="works" class="latest-works">
+    <div class="container">
+        <div class="latest-head">
+            <div>
+                <h2 class="section-title">My Latest Works</h2>
+                <p class="section-sub">Perfect solution for digital experience</p>
+            </div>
+            <a class="explore-link" href="#">Explore More Works</a>
+        </div>
+        <div class="work">
+            <div class="work-card app_design">
+                <div class="work-text">
+                    <h3>App Design</h3>
+                    <p>Food Delivery App</p>
+                </div>
+                <img src="https://placehold.co/720x420" alt="Food Delivery App placeholder">
+            </div>
+            <div class="work-card web_design">
+                <div class="work-text">
+                    <h3>Web Design</h3>
+                    <p>Agency Website</p>
+                </div>
+                <img src="https://placehold.co/720x420" alt="Agency Website placeholder">
+            </div>
+            <div class="work-card brand_design">
+                <div class="work-text">
+                    <h3>Brand Design</h3>
+                    <p>Brand Identity</p>
+                </div>
+                <img src="https://placehold.co/720x420" alt="Brand identity placeholder">
+            </div>
+        </div>
+    </div>
+    
+</section>
+<section class="about-us">
+    <div class="container">
+        <h2 class="section-title">People talk about us</h2>
+        <p class="sub">I got a job that was in accordance with the salary and field of work. The process of submitting an application was quite cosy.</p>
+        <div class="testimonials">
+            <article class="testimonial">
+                <div class="avatar"></div>
+                <p>“A complete search of the internet has found these results satisfactory result is the most popular phrase on the web. You wouldn’t really say that it wasn’t satisfying.”</p>
+                <div class="author">John Allendale — Creative Manager</div>
+            </article>
+            <article class="testimonial">
+                <div class="avatar"></div>
+                <p>“A complete search of the internet has found these results satisfactory result is the most popular phrase on the web.”</p>
+                <div class="author">Anamika Sandula — Product Manager</div>
+            </article>
+            <article class="testimonial">
+                <div class="avatar"></div>
+                <p>“A complete search of the internet has found these results satisfactory result is the most popular phrase on the web.”</p>
+                <div class="author">Souther Hakeem — Marketing Manager</div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-grid">
+            <div class="cta-left">
+                <h2>Let’s make something
+                    amazing toghether.</h2>
+                <p class="cta-sub">Start by <a href="#" class="cta-link">saying hi</a></p>
+            </div>
+            <aside class="cta-right">
+                <div class="info-title">Information</div>
+                <div class="info-address">145 New York, FL 5467, USA</div>
+                <ul class="info-menu">
+                    <li><a class="active" href="#services">SERVICES</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#">NOTES</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+
+    </div>
+    <div class="container footer-bottom">
+        <div class="brand">Binjan | ©2020. All Rights Reserved</div>
+        <div>Design by Orix Creative Agency</div>
+    </div>
+</footer>
 </body>
 </html>
